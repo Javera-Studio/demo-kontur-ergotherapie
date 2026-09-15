@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
-import { DemoBanner } from "@/components/layout/DemoBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { practice } from "@/lib/data/practice";
@@ -53,7 +52,6 @@ export default function RootLayout({
         >
           Zum Inhalt springen
         </a>
-        <DemoBanner />
         <Header />
         <main id="main-content" className="flex-1">
           {children}

@@ -348,8 +348,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["handtherapie", "ergotherapie-senioren"],
-    heroImage: "/images/service-ergotherapie-orthopaedie.jpg",
-    imageAlt: "Ergotherapeutisches Team sitzt gemeinsam mit Trainingsmaterialien für die Handfunktion",
+    heroImage: "/images/praxis-eingang.jpg",
+    imageAlt: "Eingangsbereich des KONTUR Zentrums mit Rezeption und Logo an der Wand",
   },
   {
     slug: "ergotherapie-senioren",

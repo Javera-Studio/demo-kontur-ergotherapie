@@ -12,6 +12,8 @@ const variantClass = {
   default: "js-reveal",
   "fly-up": "js-fly-up",
   "scale-in": "js-scale-in",
+  "fly-left": "js-fly-left",
+  "fly-right": "js-fly-right",
 } as const;
 
 export function Reveal({
@@ -26,6 +28,8 @@ export function Reveal({
   /**
    * "fly-up": langsamerer, weiterer Weg von unten – für Aufzählungen/Listen.
    * "scale-in": dezentes Auftauchen aus leichtem Zoom – für Bild-/Portraitraster.
+   * "fly-left"/"fly-right": seitliches Einfliegen für abwechselnd
+   * ausgerichtete Editorial-Listen (Distanz per CSS, siehe globals.css).
    */
   variant?: keyof typeof variantClass;
 }) {

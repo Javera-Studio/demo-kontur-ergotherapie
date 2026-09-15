@@ -28,6 +28,7 @@
   --animate-fly-up: fly-up 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-scale-in: scale-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-hero-in: hero-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fly-in: fly-in 780ms ease-out forwards;
 
   @keyframes reveal {
     from {
@@ -70,6 +71,17 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fly-in {
+    from {
+      opacity: 0;
+      transform: translateX(var(--fly-in-x, 0));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }
@@ -153,6 +165,45 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .js-scale-in {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+/* Seitliches Einfliegen für abwechselnd links/rechts ausgerichtete
+   Editorial-Listen (siehe Schwerpunkte-Section). Distanz per CSS-Variable,
+   auf kleinen Screens deutlich reduziert. */
+.js-fly-left,
+.js-fly-right {
+  opacity: 0;
+}
+
+.js-fly-left {
+  --fly-in-x: -56px;
+}
+
+.js-fly-right {
+  --fly-in-x: 56px;
+}
+
+@media (max-width: 640px) {
+  .js-fly-left {
+    --fly-in-x: -22px;
+  }
+
+  .js-fly-right {
+    --fly-in-x: 22px;
+  }
+}
+
+.js-fly-left.is-visible,
+.js-fly-right.is-visible {
+  animation: var(--animate-fly-in);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-fly-left,
+  .js-fly-right {
     opacity: 1;
     animation: none;
   }
