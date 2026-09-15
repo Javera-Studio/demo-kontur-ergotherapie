@@ -20,7 +20,7 @@ export default function HomePage() {
       <Finder />
       <Schwerpunkte />
       <StickyScrollSection
-        src="/images/Parallax1.png"
+        src="/images/parallax-alltag-erwachsene.jpg"
         alt="Ergotherapeutin unterstützt eine ältere Person beim Greifen einer Tasse"
         objectPosition="object-[75%_50%] sm:object-center"
         line1={["Ergotherapie beginnt dort,", "wo Alltag wieder möglich wird."]}
@@ -30,7 +30,7 @@ export default function HomePage() {
       <Praxisraeume />
       <Team />
       <StickyScrollSection
-        src="/images/Parallax2.png"
+        src="/images/parallax-alltag-kinder.jpg"
         alt="Kinderhand übt an einem therapeutischen Steckbrett für Feinmotorik"
         objectPosition="object-[60%_60%] sm:object-center"
         line1={["Jeder Fortschritt beginnt", "mit einem persönlichen Ziel."]}
