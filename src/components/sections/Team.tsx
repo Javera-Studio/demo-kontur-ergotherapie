@@ -11,7 +11,7 @@ export function Team() {
         <SectionHeading
           eyebrow="Team"
           title="Ein Team, sechs Schwerpunkte."
-          description="Unser interdisziplinäres Team bündelt Erfahrung über alle Altersgruppen und Fachbereiche der Ergotherapie hinweg."
+          description="Empfang und Praxisorganisation sorgen für einen reibungslosen Ablauf, unser ergotherapeutisches Team begleitet Sie durch alle Altersgruppen und Fachbereiche hinweg."
         />
 
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4" role="list">
@@ -21,7 +21,7 @@ export function Team() {
                 <PracticeImage aspect="4/5" src={member.image} alt={`Portrait von ${member.name}`} />
                 <p className="mt-4 font-heading text-lg font-semibold text-ink">{member.name}</p>
                 <p className="text-sm font-medium text-cobalt">{member.role}</p>
-                <p className="mt-1 text-sm text-ink/65">{member.focus}</p>
+                <p className="mt-1 text-sm text-ink/65">{member.description}</p>
               </Reveal>
             </li>
           ))}

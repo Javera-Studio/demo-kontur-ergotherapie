@@ -1,33 +1,34 @@
 export type TeamMember = {
   name: string;
   role: string;
-  focus: string;
+  /** Schwerpunkt (Therapeut:innen) oder kurze Aufgabenbeschreibung (Empfang). */
+  description: string;
   image: string;
 };
 
 export const team: TeamMember[] = [
   {
     name: "Merle Wagner",
-    role: "Leitung, Ergotherapeutin",
-    focus: "Schwerpunkt Neurologie und Handtherapie",
+    role: "Empfang & Praxisorganisation",
+    description: "Ihre Ansprechpartnerin für Termine, Organisation und Fragen rund um den Praxisbesuch.",
     image: "/images/team-merle-wagner.jpg",
   },
   {
     name: "Jana Hartmann",
     role: "Ergotherapeutin",
-    focus: "Schwerpunkt Pädiatrie und sensorische Integration",
+    description: "Schwerpunkt Pädiatrie und sensorische Integration",
     image: "/images/team-jana-hartmann.jpg",
   },
   {
     name: "Priya Nair",
     role: "Ergotherapeutin",
-    focus: "Schwerpunkt Geriatrie und Alltagstraining",
+    description: "Schwerpunkt Geriatrie und Alltagstraining",
     image: "/images/team-priya-nair.jpg",
   },
   {
     name: "Tobias Reinke",
     role: "Ergotherapeut",
-    focus: "Schwerpunkt Psychisch-funktionelle Ergotherapie",
+    description: "Schwerpunkt Psychisch-funktionelle Ergotherapie",
     image: "/images/team-tobias-reinke.jpg",
   },
 ];

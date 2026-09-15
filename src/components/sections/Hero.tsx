@@ -18,27 +18,29 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-ink/75 via-ink/40 to-ink/85" aria-hidden="true" />
 
       <Container className="relative z-10 flex min-h-[100svh] flex-col justify-end pb-16 pt-28 sm:pb-20 sm:pt-32">
-        <p
-          className="hero-in mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-lime"
-          style={{ animationDelay: "0ms" }}
-        >
-          <span aria-hidden="true" className="inline-block h-1.5 w-1.5 bg-lime" />
-          Zentrum für Ergotherapie · Berlin
-        </p>
-        <h1
-          className="hero-in max-w-3xl font-heading text-[2.5rem] font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl"
-          style={{ animationDelay: "90ms" }}
-        >
-          {practice.claim}
-        </h1>
-        <p
-          className="hero-in mt-6 max-w-xl text-base leading-relaxed text-offwhite/80 sm:text-lg"
-          style={{ animationDelay: "180ms" }}
-        >
-          {practice.seoLine} Sechs fachliche Schwerpunkte, ein Team, ein
-          klarer Blick auf das, was im Alltag wirklich zählt.
-        </p>
-        <div className="hero-in mt-9 flex flex-wrap gap-4" style={{ animationDelay: "270ms" }}>
+        <div className="mb-16 sm:mb-24">
+          <p
+            className="hero-in mb-5 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-lime"
+            style={{ animationDelay: "0ms" }}
+          >
+            <span aria-hidden="true" className="inline-block h-1.5 w-1.5 bg-lime" />
+            Zentrum für Ergotherapie · Berlin
+          </p>
+          <h1
+            className="hero-in max-w-3xl font-heading text-[2.5rem] font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl"
+            style={{ animationDelay: "90ms" }}
+          >
+            {practice.claim}
+          </h1>
+          <p
+            className="hero-in mt-6 max-w-xl text-base leading-relaxed text-offwhite/80 sm:text-lg"
+            style={{ animationDelay: "180ms" }}
+          >
+            {practice.seoLine} Sechs fachliche Schwerpunkte, ein Team, ein
+            klarer Blick auf das, was im Alltag wirklich zählt.
+          </p>
+        </div>
+        <div className="hero-in flex flex-wrap gap-4" style={{ animationDelay: "270ms" }}>
           <Button href="/#kontakt" variant="on-dark">
             Termin buchen
           </Button>
