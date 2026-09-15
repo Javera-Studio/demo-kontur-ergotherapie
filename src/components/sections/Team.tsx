@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { PracticeImage } from "@/components/ui/PracticeImage";
 import { Reveal } from "@/components/ui/Reveal";
 import { team } from "@/lib/data/team";
 
@@ -18,7 +18,7 @@ export function Team() {
           {team.map((member, index) => (
             <li key={member.name}>
               <Reveal variant="scale-in" delay={index * 100}>
-                <ImagePlaceholder aspect="1/1" label={`Portrait ${member.name}`} futurePath="/images/team/portrait.webp" />
+                <PracticeImage aspect="4/5" src={member.image} alt={`Portrait von ${member.name}`} />
                 <p className="mt-4 font-heading text-lg font-semibold text-ink">{member.name}</p>
                 <p className="text-sm font-medium text-cobalt">{member.role}</p>
                 <p className="mt-1 text-sm text-ink/65">{member.focus}</p>

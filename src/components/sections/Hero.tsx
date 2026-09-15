@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { PracticeImage } from "@/components/ui/PracticeImage";
 import { KonturLine } from "@/components/ui/KonturLine";
 import { practice } from "@/lib/data/practice";
 
@@ -39,11 +39,12 @@ export function Hero() {
           </div>
         </div>
 
-        <ImagePlaceholder
+        <PracticeImage
           aspect="4/3"
           dark
-          label="Moderner Praxisraum mit Therapiegeräten"
-          futurePath="/images/kontur-hero.webp"
+          priority
+          src="/images/kontur-hero.jpg"
+          alt="Empfangsbereich des KONTUR Zentrums für Ergotherapie mit Wartebereich und Praxis-Logo an der Wand"
           className="hero-in lg:aspect-[4/5]"
           style={{ animationDelay: "160ms" }}
         />

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { PracticeImage } from "@/components/ui/PracticeImage";
 import type { Service } from "@/lib/data/services";
 
 export function ServiceHero({ service }: { service: Service }) {
@@ -52,11 +52,12 @@ export function ServiceHero({ service }: { service: Service }) {
             </div>
           </div>
 
-          <ImagePlaceholder
+          <PracticeImage
             aspect="4/3"
             dark
-            label={service.imageLabel}
-            futurePath={`/images/${service.slug}.webp`}
+            priority
+            src={service.heroImage}
+            alt={service.imageAlt}
             className="hero-in"
             style={{ animationDelay: "160ms" }}
           />

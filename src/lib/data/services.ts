@@ -36,7 +36,10 @@ export type Service = {
   faq: FaqEntry[];
   /** Slugs verwandter Leistungen. */
   verwandte: string[];
-  imageLabel: string;
+  /** Pfad zum Hero-/Vorschaubild in public/images. */
+  heroImage: string;
+  /** Alt-Text, der den tatsächlichen Bildinhalt beschreibt. */
+  imageAlt: string;
 };
 
 export const services: Service[] = [
@@ -114,7 +117,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-psychische-gesundheit"],
-    imageLabel: "Kind bei feinmotorischer Übung am Therapietisch",
+    heroImage: "/images/praxis-bewegungsraum-kinder.jpg",
+    imageAlt: "Bewegungsraum für Kinder mit Kletterwand, Hängeschaukel und Therapiematerial im KONTUR Zentrum",
   },
   {
     slug: "ergotherapie-neurologie",
@@ -190,7 +194,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["handtherapie", "ergotherapie-senioren"],
-    imageLabel: "Übung zur Handfunktion nach neurologischer Erkrankung",
+    heroImage: "/images/service-ergotherapie-neurologie.jpg",
+    imageAlt: "Ergotherapeut übt mit einem älteren Klienten eine kognitive Zuordnungsübung, im Hintergrund eine Illustration des Gehirns",
   },
   {
     slug: "handtherapie",
@@ -266,7 +271,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-orthopaedie", "ergotherapie-neurologie"],
-    imageLabel: "Funktionelles Training der Handbeweglichkeit",
+    heroImage: "/images/praxis-handtherapie-raum.jpg",
+    imageAlt: "Therapieraum mit Wandmodulen für Fein- und Handmotorik sowie Behandlungsliege",
   },
   {
     slug: "ergotherapie-orthopaedie",
@@ -342,7 +348,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["handtherapie", "ergotherapie-senioren"],
-    imageLabel: "Bewegungstraining nach orthopädischer Operation",
+    heroImage: "/images/service-ergotherapie-orthopaedie.jpg",
+    imageAlt: "Ergotherapeutisches Team sitzt gemeinsam mit Trainingsmaterialien für die Handfunktion",
   },
   {
     slug: "ergotherapie-senioren",
@@ -418,7 +425,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-orthopaedie"],
-    imageLabel: "Alltagstraining mit älterer Person in heller Praxisumgebung",
+    heroImage: "/images/service-ergotherapie-senioren.jpg",
+    imageAlt: "Ergotherapeutin unterstützt eine Klientin beim Trainieren einer Greif- und Reichbewegung in der heimischen Küche",
   },
   {
     slug: "ergotherapie-psychische-gesundheit",
@@ -494,7 +502,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-kinder", "ergotherapie-senioren"],
-    imageLabel: "Ruhiger Therapieraum für alltagsorientiertes Training",
+    heroImage: "/images/service-ergotherapie-psychische-gesundheit.jpg",
+    imageAlt: "Zwei Personen erarbeiten gemeinsam einen strukturierten Wochenplan",
   },
 ];
 

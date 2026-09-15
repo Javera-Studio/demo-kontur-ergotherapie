@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
+import { PracticeImage } from "@/components/ui/PracticeImage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { services } from "@/lib/data/services";
@@ -74,7 +74,7 @@ export function Schwerpunkte() {
           </ul>
 
           <div className="hidden lg:block">
-            <ImagePlaceholder aspect="4/5" label={active.imageLabel} futurePath={`/images/${active.slug}.webp`} />
+            <PracticeImage key={active.slug} aspect="4/5" src={active.heroImage} alt={active.imageAlt} />
             <p className="mt-4 text-sm leading-relaxed text-ink/65">{active.teaser}</p>
           </div>
         </div>
