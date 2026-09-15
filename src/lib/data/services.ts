@@ -49,7 +49,7 @@ export const services: Service[] = [
       "Unterstützung bei Fein- und Grobmotorik, Konzentration und Alltagshandlungen – spielerisch und altersgerecht.",
     finderLabel: "Kind",
     finderTags: ["kind", "alltag"],
-    metaTitle: "Ergotherapie für Kinder in Berlin | KONTUR",
+    metaTitle: "Ergotherapie für Kinder in Berlin",
     metaDescription:
       "Ergotherapie für Kinder in Berlin: Unterstützung bei Motorik, Konzentration, Wahrnehmung und Alltagshandlungen. Individuelle Förderung im KONTUR Zentrum für Ergotherapie.",
     heroKicker: "Kinder & Jugendliche",
@@ -125,7 +125,7 @@ export const services: Service[] = [
       "Gezieltes Training nach Schlaganfall, Schädel-Hirn-Trauma oder bei neurologischen Erkrankungen für mehr Selbstständigkeit im Alltag.",
     finderLabel: "Neurologie",
     finderTags: ["neurologie", "alltag"],
-    metaTitle: "Neurologische Ergotherapie in Berlin | KONTUR",
+    metaTitle: "Neurologische Ergotherapie in Berlin",
     metaDescription:
       "Neurologische Ergotherapie in Berlin: Training von Alltagsfähigkeiten nach Schlaganfall, Schädel-Hirn-Trauma oder bei neurologischen Erkrankungen. Individuell im KONTUR Zentrum.",
     heroKicker: "Neurologie",
@@ -201,7 +201,7 @@ export const services: Service[] = [
       "Spezialisierte Behandlung nach Verletzungen oder Operationen an Hand und Arm – für Beweglichkeit, Kraft und Funktion.",
     finderLabel: "Hand",
     finderTags: ["hand"],
-    metaTitle: "Handtherapie in Berlin | KONTUR Zentrum für Ergotherapie",
+    metaTitle: "Handtherapie in Berlin",
     metaDescription:
       "Handtherapie in Berlin nach Verletzungen, Operationen oder bei chronischen Beschwerden an Hand und Arm. Funktionelles Training im KONTUR Zentrum für Ergotherapie.",
     heroKicker: "Hand & Arm",
@@ -277,7 +277,7 @@ export const services: Service[] = [
       "Unterstützung bei Beschwerden des Bewegungsapparats – nach Operationen, Unfällen oder bei chronischen Erkrankungen der Gelenke.",
     finderLabel: "Orthopädie",
     finderTags: ["orthopaedie", "alltag"],
-    metaTitle: "Orthopädische Ergotherapie in Berlin | KONTUR",
+    metaTitle: "Orthopädische Ergotherapie in Berlin",
     metaDescription:
       "Orthopädische Ergotherapie in Berlin bei Beschwerden des Bewegungsapparats, nach Operationen oder Unfällen. Funktionelles Training im KONTUR Zentrum für Ergotherapie.",
     heroKicker: "Orthopädie",
@@ -353,7 +353,7 @@ export const services: Service[] = [
       "Erhalt von Selbstständigkeit und Sicherheit im Alltag – bei altersbedingten Veränderungen oder nach gesundheitlichen Einschnitten.",
     finderLabel: "Senioren",
     finderTags: ["senioren", "alltag"],
-    metaTitle: "Ergotherapie für Senioren in Berlin | KONTUR",
+    metaTitle: "Ergotherapie für Senioren in Berlin",
     metaDescription:
       "Ergotherapie für Senioren in Berlin: Erhalt von Selbstständigkeit, Sturzprophylaxe und Alltagstraining bei altersbedingten Veränderungen. Im KONTUR Zentrum für Ergotherapie.",
     heroKicker: "Senioren",
@@ -429,7 +429,7 @@ export const services: Service[] = [
       "Aufbau von Struktur, Handlungsfähigkeit und Belastbarkeit im Alltag bei psychischen Erkrankungen oder Belastungssituationen.",
     finderLabel: "Alltag",
     finderTags: ["psyche", "alltag"],
-    metaTitle: "Psychisch-funktionelle Ergotherapie in Berlin | KONTUR",
+    metaTitle: "Psychisch-funktionelle Ergotherapie in Berlin",
     metaDescription:
       "Psychisch-funktionelle Ergotherapie in Berlin: Struktur und Handlungsfähigkeit im Alltag bei psychischen Erkrankungen aufbauen. Im KONTUR Zentrum für Ergotherapie.",
     heroKicker: "Psychische Gesundheit",
