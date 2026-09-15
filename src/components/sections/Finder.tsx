@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 
 const options = [
   { label: "Kind", slug: "ergotherapie-kinder" },
@@ -23,17 +24,19 @@ export function Finder() {
             Wobei können wir Sie unterstützen?
           </h2>
           <ul className="flex flex-wrap gap-3" role="list">
-            {options.map((option) => (
+            {options.map((option, index) => (
               <li key={option.slug}>
-                <Link
-                  href={`/${option.slug}`}
-                  className="inline-flex min-h-12 items-center gap-2 border border-ink/15 bg-offwhite px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-cobalt hover:text-cobalt"
-                >
-                  {option.label}
-                  <svg viewBox="0 0 12 12" aria-hidden="true" className="h-3 w-3">
-                    <path d="M2 6h8M6 2l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </Link>
+                <Reveal delay={index * 70}>
+                  <Link
+                    href={`/${option.slug}`}
+                    className="inline-flex min-h-12 items-center gap-2 border border-ink/15 bg-offwhite px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-cobalt hover:text-cobalt"
+                  >
+                    {option.label}
+                    <svg viewBox="0 0 12 12" aria-hidden="true" className="h-3 w-3">
+                      <path d="M2 6h8M6 2l4 4-4 4" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </Reveal>
               </li>
             ))}
           </ul>

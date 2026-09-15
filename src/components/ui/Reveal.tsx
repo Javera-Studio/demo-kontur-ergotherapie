@@ -8,14 +8,26 @@ import { useEffect, useRef, useState, ReactNode } from "react";
  * CSS (siehe globals.css) und lässt Inhalte ohne JavaScript unverändert
  * sichtbar (kein serverseitiges Ausblenden).
  */
+const variantClass = {
+  default: "js-reveal",
+  "fly-up": "js-fly-up",
+  "scale-in": "js-scale-in",
+} as const;
+
 export function Reveal({
   children,
   delay = 0,
   className = "",
+  variant = "default",
 }: {
   children: ReactNode;
   delay?: number;
   className?: string;
+  /**
+   * "fly-up": langsamerer, weiterer Weg von unten – für Aufzählungen/Listen.
+   * "scale-in": dezentes Auftauchen aus leichtem Zoom – für Bild-/Portraitraster.
+   */
+  variant?: keyof typeof variantClass;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -41,7 +53,7 @@ export function Reveal({
   return (
     <div
       ref={ref}
-      className={`js-reveal ${visible ? "is-visible" : ""} ${className}`}
+      className={`${variantClass[variant]} ${visible ? "is-visible" : ""} ${className}`}
       style={visible ? { animationDelay: `${delay}ms` } : undefined}
     >
       {children}

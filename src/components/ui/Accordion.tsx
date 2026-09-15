@@ -41,14 +41,21 @@ export function Accordion({ items }: { items: AccordionEntry[] }) {
                 </span>
               </button>
             </h3>
+            {/* Grid-Rows-Trick statt `hidden`: erlaubt eine sanfte Höhenanimation
+                beim Öffnen/Schließen ohne JS-Höhenmessung. Reines Textfeld ohne
+                fokussierbare Inhalte, daher ohne `hidden` weiterhin barrierefrei
+                bedienbar (siehe aria-expanded am Button). */}
             <div
               id={panelId}
               role="region"
               aria-labelledby={buttonId}
-              hidden={!isOpen}
-              className="px-5 pb-5 text-sm leading-relaxed text-ink/70 sm:px-6 sm:text-base"
+              aria-hidden={!isOpen}
+              className="grid transition-[grid-template-rows] duration-300 ease-out"
+              style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
             >
-              {item.answer}
+              <div className="overflow-hidden">
+                <p className="px-5 pb-5 text-sm leading-relaxed text-ink/70 sm:px-6 sm:text-base">{item.answer}</p>
+              </div>
             </div>
           </div>
         );

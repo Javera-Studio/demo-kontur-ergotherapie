@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal";
 
 export function ServiceListSection({
   eyebrow,
@@ -17,10 +18,12 @@ export function ServiceListSection({
       <Container className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <SectionHeading eyebrow={eyebrow} title={title} />
         <ul className="grid gap-4 border-t border-ink/10 pt-8 sm:grid-cols-2" role="list">
-          {items.map((item) => (
-            <li key={item} className="flex gap-3">
-              <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-cobalt" />
-              <span className="text-base leading-relaxed text-ink/80">{item}</span>
+          {items.map((item, index) => (
+            <li key={item}>
+              <Reveal delay={index * 70} className="flex gap-3">
+                <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 bg-cobalt" />
+                <span className="text-base leading-relaxed text-ink/80">{item}</span>
+              </Reveal>
             </li>
           ))}
         </ul>

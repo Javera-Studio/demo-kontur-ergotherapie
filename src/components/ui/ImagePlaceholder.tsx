@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 const aspectClasses = {
   "4/5": "aspect-[4/5]",
   "4/3": "aspect-[4/3]",
@@ -21,6 +23,7 @@ export function ImagePlaceholder({
   futurePath,
   className = "",
   dark = false,
+  style,
 }: {
   aspect: Aspect;
   /** Kurzbeschreibung, was später an dieser Stelle zu sehen sein wird. */
@@ -29,12 +32,14 @@ export function ImagePlaceholder({
   futurePath: string;
   className?: string;
   dark?: boolean;
+  style?: CSSProperties;
 }) {
   return (
     // Späteres Bild: {futurePath}
     <div
       role="img"
       aria-label={`Platzhalter: ${label}`}
+      style={style}
       className={`relative flex w-full flex-col items-center justify-center gap-3 overflow-hidden border px-6 text-center ${
         dark ? "border-offwhite/20 bg-ink-soft" : "border-dashed border-silver bg-ice"
       } ${aspectClasses[aspect]} ${className}`}
