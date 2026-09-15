@@ -14,21 +14,29 @@ export const practice = {
 
 export const haltung = {
   eyebrow: "Haltung & Ansatz",
-  title: "Therapie, die vom Menschen ausgeht, nicht von der Diagnose.",
+  title: "Therapie, die im Alltag ankommt.",
   text:
     "Wir denken Ergotherapie konsequent vom Alltag her: Was möchte ein Mensch wieder tun können, worauf kommt es im eigenen Leben tatsächlich an? Auf dieser Grundlage entwickeln wir fachlich fundierte, individuell abgestimmte Therapiepläne für Kinder, Erwachsene und ältere Menschen.",
   points: [
     {
-      title: "Alltagsnah",
-      text: "Ziele orientieren sich an realen Anforderungen zuhause, in der Schule oder im Beruf.",
+      number: "01",
+      title: "Persönlich verstehen",
+      text: "Wir betrachten nicht nur einzelne Beschwerden, sondern die persönliche Lebenssituation und die Ziele unserer Patientinnen und Patienten.",
     },
     {
-      title: "Fachlich fundiert",
-      text: "Unser Team arbeitet nach aktuellen ergotherapeutischen Standards über alle Fachbereiche hinweg.",
+      number: "02",
+      title: "Individuell planen",
+      text: "Jede Therapie wird auf die vorhandenen Fähigkeiten, Herausforderungen und den persönlichen Alltag abgestimmt.",
     },
     {
-      title: "Individuell abgestimmt",
-      text: "Jeder Therapieplan wird auf die persönliche Situation und die verordnete Diagnose zugeschnitten.",
+      number: "03",
+      title: "Aktiv begleiten",
+      text: "Wir entwickeln gemeinsam konkrete Strategien und trainieren Fähigkeiten, die im täglichen Leben wirklich gebraucht werden.",
+    },
+    {
+      number: "04",
+      title: "Selbstständigkeit stärken",
+      text: "Unser Ziel ist es, langfristig mehr Sicherheit, Handlungsfähigkeit und Lebensqualität zu ermöglichen.",
     },
   ],
 };

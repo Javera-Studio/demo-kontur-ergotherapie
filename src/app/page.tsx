@@ -19,13 +19,6 @@ export default function HomePage() {
       <Hero />
       <Finder />
       <Schwerpunkte />
-      <StickyScrollSection
-        src="/images/parallax-alltag-erwachsene.jpg"
-        alt="Ergotherapeutin unterstützt eine ältere Person beim Greifen einer Tasse"
-        objectPosition="object-[75%_50%] sm:object-center"
-        line1={["Ergotherapie beginnt dort,", "wo Alltag wieder möglich wird."]}
-        line2={["Selbstständigkeit zurückgewinnen.", "Sicherheit entwickeln.", "Lebensqualität erhalten."]}
-      />
       <Haltung />
       <Praxisraeume />
       <Team />
