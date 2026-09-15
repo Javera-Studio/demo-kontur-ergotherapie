@@ -59,7 +59,7 @@ export function Header() {
         scrolled ? "border-silver shadow-[0_1px_10px_-4px_rgba(16,21,34,0.15)]" : "border-transparent"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8 lg:py-7">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Zur Startseite von KONTUR">
           <LogoMark className="h-8 w-auto sm:h-9" />
         </Link>

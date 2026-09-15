@@ -1,7 +1,11 @@
 export const practice = {
   name: "KONTUR – Zentrum für Ergotherapie",
   claim: "Alltag ist, was wir möglich machen.",
+  /** Manueller Zeilenumbruch für den Hero-H1 (siehe Hero.tsx). */
+  claimLines: ["Alltag ist, was wir", "möglich machen."],
   seoLine: "Moderne Ergotherapie für Kinder, Erwachsene und Senioren in Berlin.",
+  heroText:
+    "Moderne Ergotherapie für Kinder, Erwachsene und Senioren – individuell, alltagsnah und mit sechs fachlichen Schwerpunkten.",
   addressLine: "Torstraße 142, 10119 Berlin",
   phone: "+49 30 1234 567",
   phoneDisplay: "030 1234 567",

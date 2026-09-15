@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState, ReactNode } from "react";
+import { useEffect, useRef, useState, ReactNode, CSSProperties } from "react";
+
+type RevealStyle = CSSProperties & { "--fly-in-x"?: string; "--reveal-y"?: string };
 
 /**
  * Dezentes Scroll-Reveal für einzelne inhaltliche Blöcke (nicht für jede
@@ -21,6 +23,7 @@ export function Reveal({
   delay = 0,
   className = "",
   variant = "default",
+  distance,
 }: {
   children: ReactNode;
   delay?: number;
@@ -32,6 +35,13 @@ export function Reveal({
    * ausgerichtete Editorial-Listen (Distanz per CSS, siehe globals.css).
    */
   variant?: keyof typeof variantClass;
+  /**
+   * Überschreibt die Standarddistanz (px) des gewählten Effekts, z. B. für
+   * dezentere Bewegung in kompakten Grids. Positiv für "fly-up"/"default"
+   * (Weg von unten), Vorzeichen bei "fly-left"/"fly-right" ist bereits durch
+   * die Variante festgelegt.
+   */
+  distance?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -54,12 +64,19 @@ export function Reveal({
     return () => observer.disconnect();
   }, []);
 
+  const distanceStyle: RevealStyle | undefined =
+    distance === undefined
+      ? undefined
+      : variant === "fly-right"
+        ? { "--fly-in-x": `${distance}px` }
+        : variant === "fly-left"
+          ? { "--fly-in-x": `-${distance}px` }
+          : { "--reveal-y": `${distance}px` };
+
+  const style: RevealStyle | undefined = visible ? { animationDelay: `${delay}ms`, ...distanceStyle } : distanceStyle;
+
   return (
-    <div
-      ref={ref}
-      className={`${variantClass[variant]} ${visible ? "is-visible" : ""} ${className}`}
-      style={visible ? { animationDelay: `${delay}ms` } : undefined}
-    >
+    <div ref={ref} className={`${variantClass[variant]} ${visible ? "is-visible" : ""} ${className}`} style={style}>
       {children}
     </div>
   );

@@ -33,7 +33,7 @@
   @keyframes reveal {
     from {
       opacity: 0;
-      transform: translateY(16px);
+      transform: translateY(var(--reveal-y, 16px));
     }
     to {
       opacity: 1;
@@ -44,7 +44,7 @@
   @keyframes fly-up {
     from {
       opacity: 0;
-      transform: translateY(64px);
+      transform: translateY(var(--reveal-y, 64px));
     }
     to {
       opacity: 1;
