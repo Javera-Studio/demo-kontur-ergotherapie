@@ -4,8 +4,8 @@ export const practice = {
   /** Manueller Zeilenumbruch für den Hero-H1 (siehe Hero.tsx). */
   claimLines: ["Alltag ist, was wir", "möglich machen."],
   seoLine: "Moderne Ergotherapie für Kinder, Erwachsene und Senioren in Berlin.",
-  heroText:
-    "Moderne Ergotherapie für Kinder, Erwachsene und Senioren – individuell, alltagsnah und mit sechs fachlichen Schwerpunkten.",
+  /** Manueller Zeilenumbruch für den Hero-Fließtext (siehe Hero.tsx). */
+  heroTextLines: ["Moderne Ergotherapie für Kinder, Erwachsene und Senioren –", "individuell, alltagsnah und mit sechs fachlichen Schwerpunkten."],
   addressLine: "Torstraße 142, 10119 Berlin",
   phone: "+49 30 1234 567",
   phoneDisplay: "030 1234 567",
@@ -45,15 +45,31 @@ export const haltung = {
   ],
 };
 
-export const verordnung = {
-  eyebrow: "Verordnung & Termin",
-  title: "So kommen Sie zu Ihrem Termin",
-  text:
-    "Ergotherapie wird ärztlich verordnet. Mit Ihrer Verordnung melden Sie sich bei uns – telefonisch, per E-Mail oder über das Kontaktformular. Wir prüfen die Verordnung, klären offene Fragen und vereinbaren einen passenden Ersttermin.",
+export const wegZurTherapie = {
+  eyebrow: "Ihr Weg zur Therapie",
+  title: "In vier Schritten zur passenden Behandlung.",
+  text: "Von der ärztlichen Verordnung bis zur regelmäßigen Therapie begleiten wir Sie klar, persönlich und unkompliziert.",
   steps: [
-    "Verordnung von Haus-, Fach- oder Kinderärztin bzw. -arzt einholen",
-    "Termin telefonisch, per E-Mail oder über das Formular anfragen",
-    "Erstgespräch und Befund in der Praxis",
-    "Individueller Therapieplan und regelmäßige Termine",
+    {
+      number: "01",
+      title: "Verordnung & Kontakt",
+      text: "Sie kontaktieren uns mit Ihrer ärztlichen Verordnung – telefonisch, per E-Mail oder über das Kontaktformular.",
+    },
+    {
+      number: "02",
+      title: "Termin & Erstgespräch",
+      text: "Wir klären offene Fragen, vereinbaren einen passenden Termin und nehmen uns Zeit für Ihre persönliche Situation.",
+    },
+    {
+      number: "03",
+      title: "Befund & Therapieziele",
+      text: "Gemeinsam erfassen wir die relevanten Fähigkeiten und Herausforderungen und legen realistische Ziele für Ihren Alltag fest.",
+    },
+    {
+      number: "04",
+      title: "Behandlung & Anpassung",
+      text: "Auf dieser Grundlage erstellen wir Ihren individuellen Therapieplan und passen ihn im Verlauf regelmäßig an Ihre Entwicklung an.",
+    },
   ],
+  closingText: "Sie haben eine Verordnung oder möchten vorab etwas klären?",
 };

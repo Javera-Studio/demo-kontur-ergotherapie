@@ -40,7 +40,7 @@ export function Haltung() {
       <div className="lg:absolute lg:inset-0 lg:z-10">
         <Container className="py-20 sm:py-28 lg:flex lg:h-full lg:flex-col lg:py-0">
           <div className="lg:flex lg:flex-1 lg:items-center lg:justify-center">
-            <Reveal className="mx-auto text-center">
+            <Reveal className="mx-auto text-center lg:mt-20">
               <SectionHeading eyebrow={haltung.eyebrow} title={haltung.title} description={haltung.text} light align="center" />
             </Reveal>
           </div>

@@ -64,10 +64,14 @@ export function Hero() {
               className="hero-in mt-6 max-w-[650px] text-sm leading-[1.5] text-offwhite/85 sm:text-base"
               style={{ animationDelay: "180ms" }}
             >
-              {practice.heroText}
+              {practice.heroTextLines.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
             </p>
             <div
-              className="hero-in mt-8 flex flex-col gap-4 sm:flex-row sm:items-center"
+              className="hero-in mt-8 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:items-center"
               style={{ animationDelay: "270ms" }}
             >
               <Button href="/#kontakt" variant="on-dark">
