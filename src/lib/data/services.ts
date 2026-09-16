@@ -117,8 +117,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-psychische-gesundheit"],
-    heroImage: "/images/praxis-bewegungsraum-kinder.jpg",
-    imageAlt: "Bewegungsraum für Kinder mit Kletterwand, Hängeschaukel und Therapiematerial im KONTUR Zentrum",
+    heroImage: "/images/service-ergotherapie-kinder.jpg",
+    imageAlt: "Ergotherapeutin begleitet einen Jungen bei einer feinmotorischen Übung an einem Holzbrett",
   },
   {
     slug: "ergotherapie-neurologie",
@@ -195,7 +195,7 @@ export const services: Service[] = [
     ],
     verwandte: ["handtherapie", "ergotherapie-senioren"],
     heroImage: "/images/service-ergotherapie-neurologie.jpg",
-    imageAlt: "Ergotherapeut übt mit einem älteren Klienten eine kognitive Zuordnungsübung, im Hintergrund eine Illustration des Gehirns",
+    imageAlt: "Ergotherapeut trainiert mit einem älteren Klienten Konzentration und Zuordnung mit farbigen Holzsteinen",
   },
   {
     slug: "handtherapie",
@@ -271,8 +271,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-orthopaedie", "ergotherapie-neurologie"],
-    heroImage: "/images/praxis-handtherapie-raum.jpg",
-    imageAlt: "Therapieraum mit Wandmodulen für Fein- und Handmotorik sowie Behandlungsliege",
+    heroImage: "/images/service-handtherapie.jpg",
+    imageAlt: "Ergotherapeutin untersucht und mobilisiert Hand und Handgelenk eines Patienten",
   },
   {
     slug: "ergotherapie-orthopaedie",
@@ -348,8 +348,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["handtherapie", "ergotherapie-senioren"],
-    heroImage: "/images/praxis-eingang.jpg",
-    imageAlt: "Eingangsbereich des KONTUR Zentrums mit Rezeption und Logo an der Wand",
+    heroImage: "/images/service-ergotherapie-orthopaedie.jpg",
+    imageAlt: "Ergotherapeutin begleitet eine Patientin beim funktionellen Training von Schulter und Arm",
   },
   {
     slug: "ergotherapie-senioren",
@@ -426,7 +426,7 @@ export const services: Service[] = [
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-orthopaedie"],
     heroImage: "/images/service-ergotherapie-senioren.jpg",
-    imageAlt: "Ergotherapeutin unterstützt eine Klientin beim Trainieren einer Greif- und Reichbewegung in der heimischen Küche",
+    imageAlt: "Ergotherapeut unterstützt eine ältere Klientin bei einer Greif- und Koordinationsübung am Tisch",
   },
   {
     slug: "ergotherapie-psychische-gesundheit",
@@ -503,7 +503,7 @@ export const services: Service[] = [
     ],
     verwandte: ["ergotherapie-kinder", "ergotherapie-senioren"],
     heroImage: "/images/service-ergotherapie-psychische-gesundheit.jpg",
-    imageAlt: "Zwei Personen erarbeiten gemeinsam einen strukturierten Wochenplan",
+    imageAlt: "Ergotherapeutin und Klientin erarbeiten gemeinsam einen strukturierten Wochenplan",
   },
 ];
 
