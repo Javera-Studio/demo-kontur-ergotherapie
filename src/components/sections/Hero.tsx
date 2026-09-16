@@ -41,7 +41,7 @@ export function Hero() {
       <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/40 to-transparent" aria-hidden="true" />
 
       <div className="relative z-10 flex min-h-[560px] flex-col justify-center px-6 py-14 sm:min-h-[620px] sm:px-8 sm:py-16 lg:absolute lg:inset-0 lg:min-h-0 lg:px-14 lg:py-0">
-        <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto w-full max-w-7xl lg:-translate-y-10">
           <div className="max-w-[760px]">
             <p
               className="hero-in mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-lime"
@@ -71,7 +71,7 @@ export function Hero() {
               ))}
             </p>
             <div
-              className="hero-in mt-8 flex flex-col gap-4 sm:mt-16 sm:flex-row sm:items-center"
+              className="hero-in mt-8 flex flex-col gap-4 sm:mt-20 sm:flex-row sm:items-center"
               style={{ animationDelay: "270ms" }}
             >
               <Button href="/#kontakt" variant="on-dark">
