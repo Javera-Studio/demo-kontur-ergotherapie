@@ -117,8 +117,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-psychische-gesundheit"],
-    heroImage: "/images/praxis-bewegungsraum-kinder.jpg",
-    imageAlt: "Bewegungsraum für Kinder mit Kletterwand, Hängeschaukel und Therapiematerial im KONTUR Zentrum",
+    heroImage: "/images/parallax-alltag-kinder.jpg",
+    imageAlt: "Angeleitete Feinmotorikübung mit Holzstiften an einem Steckbrett",
   },
   {
     slug: "ergotherapie-neurologie",
@@ -271,8 +271,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-orthopaedie", "ergotherapie-neurologie"],
-    heroImage: "/images/praxis-handtherapie-raum.jpg",
-    imageAlt: "Therapieraum mit Wandmodulen für Fein- und Handmotorik sowie Behandlungsliege",
+    heroImage: "/images/parallax-alltag-kinder.jpg",
+    imageAlt: "Gezieltes Greifen kleiner Holzstifte zur Übung der Handgeschicklichkeit",
   },
   {
     slug: "ergotherapie-orthopaedie",
@@ -348,8 +348,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["handtherapie", "ergotherapie-senioren"],
-    heroImage: "/images/praxis-eingang.jpg",
-    imageAlt: "Eingangsbereich des KONTUR Zentrums mit Rezeption und Logo an der Wand",
+    heroImage: "/images/service-ergotherapie-senioren.jpg",
+    imageAlt: "Therapeutisch begleitetes Arm- und Schultertraining beim Erreichen einer Tasse im Küchenregal",
   },
   {
     slug: "ergotherapie-senioren",
@@ -425,8 +425,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-orthopaedie"],
-    heroImage: "/images/service-ergotherapie-senioren.jpg",
-    imageAlt: "Ergotherapeutin unterstützt eine Klientin beim Trainieren einer Greif- und Reichbewegung in der heimischen Küche",
+    heroImage: "/images/parallax-alltag-erwachsene.jpg",
+    imageAlt: "Eine ältere Person wird beim Greifen und Halten einer Tasse unterstützt",
   },
   {
     slug: "ergotherapie-psychische-gesundheit",

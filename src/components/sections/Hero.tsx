@@ -14,7 +14,7 @@ import { practice } from "@/lib/data/practice";
  */
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-ink text-offwhite lg:h-[clamp(720px,86vh,780px)]">
+    <section className="relative -mt-14 overflow-hidden bg-ink text-offwhite lg:h-[clamp(720px,86vh,780px)]">
       <Image
         src="/images/hero.jpg"
         alt="Ergotherapeutisches Team des KONTUR Zentrums sitzt gemeinsam mit Trainingsmaterialien für die Handfunktion"
@@ -71,7 +71,7 @@ export function Hero() {
               ))}
             </p>
             <div
-              className="hero-in mt-8 flex flex-col gap-4 sm:mt-20 sm:flex-row sm:items-center"
+              className="hero-in relative top-[1cm] mt-8 flex flex-col gap-4 sm:mt-20 sm:flex-row sm:items-center"
               style={{ animationDelay: "270ms" }}
             >
               <Button href="/#kontakt" variant="on-dark">
