@@ -14,7 +14,10 @@ import { practice } from "@/lib/data/practice";
  */
 export function Hero() {
   return (
-    <section className="relative -mt-[94px] overflow-hidden bg-ink text-offwhite lg:h-[clamp(720px,86vh,780px)]">
+    <section
+      id="hero"
+      className="relative -mt-[94px] scroll-mt-24 overflow-hidden bg-ink text-offwhite lg:h-[clamp(720px,86vh,780px)]"
+    >
       <Image
         src="/images/hero.jpg"
         alt="Ergotherapeutisches Team des KONTUR Zentrums sitzt gemeinsam mit Trainingsmaterialien für die Handfunktion"
