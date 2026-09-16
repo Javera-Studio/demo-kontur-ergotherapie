@@ -30,8 +30,8 @@ export function Schwerpunkte() {
                 <Reveal variant={isLeft ? "fly-left" : "fly-right"} delay={index * 90}>
                   <Link
                     href={`/${service.slug}`}
-                    className={`group flex w-full items-baseline justify-start gap-4 py-5 sm:gap-6 sm:py-6 ${
-                      isLeft ? "" : "sm:justify-end"
+                    className={`group flex w-full flex-col items-start gap-2.5 py-5 sm:py-6 ${
+                      isLeft ? "" : "sm:items-end"
                     }`}
                   >
                     <span className="inline-flex max-w-full items-baseline gap-4 sm:gap-6">
@@ -50,6 +50,13 @@ export function Schwerpunkte() {
                         <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </span>
+                    <p
+                      className={`max-w-[560px] text-base font-normal leading-[1.5] text-ink/60 transition-colors duration-200 line-clamp-3 group-hover:text-ink/75 sm:text-[17px] sm:line-clamp-2 ${
+                        isLeft ? "text-left" : "text-left sm:text-right"
+                      }`}
+                    >
+                      {service.teaser}
+                    </p>
                   </Link>
                 </Reveal>
               </li>
