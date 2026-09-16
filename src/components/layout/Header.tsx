@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { mainNav } from "@/lib/nav";
+import { services } from "@/lib/data/services";
 import { LogoMark } from "@/components/layout/LogoMark";
 
 const SCROLL_THRESHOLD = 24;
@@ -65,15 +66,48 @@ export function Header() {
         </Link>
 
         <nav aria-label="Hauptnavigation" className="hidden flex-1 items-center justify-center gap-7 lg:flex">
-          {mainNav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-ink transition-colors hover:text-cobalt"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {mainNav.map((item) =>
+            item.href === "/#leistungen" ? (
+              <div key={item.href} className="group relative">
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-1 text-sm font-medium text-ink transition-colors hover:text-cobalt"
+                >
+                  {item.label}
+                  <svg
+                    viewBox="0 0 12 12"
+                    aria-hidden="true"
+                    className="h-3 w-3 text-ink/50 transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180"
+                  >
+                    <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+
+                <div className="invisible absolute left-1/2 top-full z-50 w-72 -translate-x-1/2 pt-3 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                  <div className="border border-silver bg-offwhite p-2 shadow-[0_16px_32px_-16px_rgba(16,21,34,0.28)]">
+                    {services.map((service) => (
+                      <Link
+                        key={service.slug}
+                        href={`/${service.slug}`}
+                        className="flex items-center gap-3 px-3 py-2.5 text-sm text-ink transition-colors hover:bg-ice hover:text-cobalt"
+                      >
+                        <span className="font-heading text-xs font-semibold text-ink/30">{service.number}</span>
+                        {service.navTitle}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-ink transition-colors hover:text-cobalt"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="hidden shrink-0 lg:flex">
