@@ -425,8 +425,8 @@ export const services: Service[] = [
       },
     ],
     verwandte: ["ergotherapie-neurologie", "ergotherapie-orthopaedie"],
-    heroImage: "/images/service-ergotherapie-senioren.jpg",
-    imageAlt: "Ergotherapeut unterstützt eine ältere Klientin bei einer Greif- und Koordinationsübung am Tisch",
+    heroImage: "/images/parallax-alltag-erwachsene.jpg",
+    imageAlt: "Eine ältere Person wird beim Greifen und Halten einer Tasse an der Hand gestützt",
   },
   {
     slug: "ergotherapie-psychische-gesundheit",
