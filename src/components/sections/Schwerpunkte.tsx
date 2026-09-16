@@ -30,7 +30,7 @@ export function Schwerpunkte() {
                 <Reveal variant={isLeft ? "fly-left" : "fly-right"} delay={index * 90}>
                   <Link
                     href={`/${service.slug}`}
-                    className={`group flex w-full items-baseline justify-start gap-4 py-8 sm:gap-6 sm:py-10 ${
+                    className={`group flex w-full items-baseline justify-start gap-4 py-5 sm:gap-6 sm:py-6 ${
                       isLeft ? "" : "sm:justify-end"
                     }`}
                   >

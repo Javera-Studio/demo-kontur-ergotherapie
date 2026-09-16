@@ -33,7 +33,7 @@ export function Hero() {
         aria-hidden="true"
         style={{
           background:
-            "linear-gradient(90deg, rgba(10,16,30,0.90) 0%, rgba(10,16,30,0.72) 42%, rgba(10,16,30,0.18) 72%, rgba(10,16,30,0.08) 100%)",
+            "linear-gradient(90deg, rgba(10,16,30,0.86) 0%, rgba(10,16,30,0.60) 28%, rgba(10,16,30,0.10) 52%, rgba(10,16,30,0.03) 75%)",
         }}
       />
 
@@ -71,7 +71,7 @@ export function Hero() {
               ))}
             </p>
             <div
-              className="hero-in mt-8 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:items-center"
+              className="hero-in mt-8 flex flex-col gap-4 sm:mt-16 sm:flex-row sm:items-center"
               style={{ animationDelay: "270ms" }}
             >
               <Button href="/#kontakt" variant="on-dark">
